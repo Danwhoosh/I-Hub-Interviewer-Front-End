@@ -1,0 +1,136 @@
+/* Sidebar Container */
+.sidebar {
+  width: 280px; /* Increased width slightly / / Prevent shrinking */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  background-color: #f1f2fd;
+   /* Increased padding */
+  text-align: center;
+  font-family: "Sixtyfour", sans-serif;
+  font-size: 16px; /* Adjusted for better fit */
+  font-weight: bold;
+  color: #040a14;
+  border-bottom: 1px solid #ccc;
+  white-space: nowrap;
+  width: 100%; /* Ensure full width */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+   /* Center vertically */
+   /* Improve readability */
+}
+
+
+
+/* Sidebar Menu Section */
+.menu-section {
+  background-color: #ffffff;
+  padding: 10px 0;
+  flex: 1;
+  overflow-y: auto;
+  width: 280px; /* Adjusted width */
+  height: 680px;
+}
+
+/* Menu Items */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 5px 0;
+}
+
+/* Menu Item Styling */
+.menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7c8493;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Menu Icon */
+.menu-item a .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Active Menu Item */
+.menu-item.active a {
+  background-color: #e9ebfd;
+  color: #4640de;
+  border-left: 4px solid #4640de;
+  padding-left: 8px;
+}
+
+/* Hover Effect */
+.menu-item a:hover {
+  background-color: #f0f2f9;
+  color: #b4b2e6;
+}
+
+/* User Profile Section */
+.user-profile {
+  background-color: #e9ebfd;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  width: 100%; /* Ensure full width */
+  height: 90px; /* Adjusted height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* User Details */
+.user-details {
+  display: flex;
+  align-items: center;
+}
+
+/* Profile Picture */
+.profile-pic-left {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* User Name */
+.user-name {
+  font-weight: 600;
+  color: #030218;
+  font-size: 16px;
+}
+
+/* User Email */
+.user-email {
+  font-weight: 400;
+  color: #7c8493;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ensures email doesn't overflow */
+}
